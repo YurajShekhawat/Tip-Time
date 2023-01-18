@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         binding.costOfServiceEditText.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode)
         }
     }
+    //Hiding keyboard due to no usage of it
     private fun handleKeyEvent(view: View, keyCode: Int): Boolean {
         if (keyCode == KeyEvent.KEYCODE_ENTER) {
             // Hide the keyboard
